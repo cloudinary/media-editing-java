@@ -39,12 +39,6 @@ class SampleApp {
 ### Media Editing API
 * [TransformApi](https://github.com/cloudinary/media-editing-api-java/blob/main/docs/TransformApi.md)
 
-
-## Contributions
-- Ensure tests run locally (add test command)
-- Open a PR and ensure Travis tests pass
-
-
 ## Get Help
 If you run into an issue or have a question, you can either:
 - Issues related to the SDK: [Open a Github issue](https://github.com/cloudinary/media-editing-java/issues)
