@@ -45,4 +45,4 @@ If you run into an issue or have a question, you can either:
 - Issues related to your account: [Open a support ticket](https://cloudinary.com/contact)
 
 ## License
-Released under the MIT license See the [LICENSE](https://github.com/cloudinary/media-editing-java/blob/main/LICENSE) file for details..
+Released under the MIT license See the [LICENSE](https://github.com/cloudinary/media-editing-java/blob/main/LICENSE) file for details.
