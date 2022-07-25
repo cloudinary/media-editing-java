@@ -11,7 +11,7 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 group 'com.cloudinary'
-version '0.1.0-beta'
+version '0.1.1-beta'
 
 allprojects {
     repositories {
