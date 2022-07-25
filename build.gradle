@@ -43,8 +43,8 @@ task execute(type:JavaExec) {
 }
 
 dependencies {
-    api 'com.cloudinary:media-delivery-api-java:0.1.0-beta'
-    api 'com.cloudinary:media-editing-api-java:0.1.0-beta'
+    api 'com.cloudinary:media-delivery-api-java:0.1.1-beta'
+    api 'com.cloudinary:media-editing-api-java:0.1.1-beta'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
