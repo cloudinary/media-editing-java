@@ -7,14 +7,14 @@ Effortlessly edit and deliver your cloud's assets.
 ## Installation
 ### Gradle
 ```groovy
-implementation 'com.cloudinary:media-editing-java:0.1.1-beta'
+implementation 'com.cloudinary:media-editing-java:0.1.2-beta'
 ```
 ### Maven
 ```xml
 <dependency>
     <groupId>com.cloudinary</groupId>
     <artifactId>media-editing-java</artifactId>
-    <version>0.1.1-beta</version>
+    <version>0.1.2-beta</version>
 </dependency>
 ```
 # Usage
