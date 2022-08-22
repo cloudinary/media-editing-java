@@ -7,7 +7,8 @@ Effortlessly edit and deliver your cloud's assets.
 
 ### Additional documentation
 This Readme provides basic installation and usage information.
-For the complete documentation, see the [Media Editing SDK Guide](https://cloudinary.com/documentation).
+For the complete documentation, see the [Media Editing SDK Guide](https://cloudinary.com/documentation/media_editing_api).
+
 
 ## Table of Contents
 - [Key Features](#key-features)
@@ -15,6 +16,7 @@ For the complete documentation, see the [Media Editing SDK Guide](https://cloudi
 - [Installation](#installation)
 - [Usage](#usage)
     - [Setup](#Setup)
+    - [Create Media Source](#Create Media Source)
 
 # Key Features
 ### Media Delivery API
@@ -55,6 +57,68 @@ class SampleApp {
     apiClient.setCloudinaryUrl("cloudinary://API_KEY:API_SECRET@CLOUD_NAME");
 }
 ```
+### Create Media Source
+The following example shows how to add a new media source:
+```java
+    MediaSourceCreatePayload mediaSourceCreatePayload = new MediaSourceCreatePayload();
+    mediaSourceCreatePayload.setDisplayName("my_media_source");
+    mediaSourceCreatePayload.setSourceType(MediaSourceCreatePayload.SourceTypeEnum.S3);
+
+    MediaSourceConfig config = new MediaSourceConfig();
+    config.setS3BucketName("my_bucket");
+    config.setS3BucketFolder("my_bucket_folder");
+    config.setS3AccessKey("123456789");
+    config.setS3SecretKey("123456789");
+    config.setS3UriTemplate("s3://my_bucket/images/{{vars.signature}}/{{fwd_key}}");
+    mediaSourceCreatePayload.setConfig(config);
+
+    try {
+        MediaSource result = apiInstance.createMediaSource(mediaSourceCreatePayload);
+        System.out.println(result);
+    } catch (ApiException e) {
+       System.out.println(e.getMessage());
+    }
+```
+
+### Transform and Store
+Example of how to perform transform and store:
+```java
+    TransformationDescriptor transformationDescriptor = new TransformationDescriptor();
+    transformationDescriptor.setCanonicalTransformation("w_500,c_scale");
+    MediaConnectorInstance mediaConnectorInstance = new MediaConnectorInstance();
+    mediaConnectorInstance.setId("123456789");
+    mediaConnectorInstance.setFwdKey("sample");
+    MediaConnectorInstance mediaTargetConnectionInstance = new MediaConnectorInstance();
+    mediaTargetConnectionInstance.setId("987654321");
+    mediaTargetConnectionInstance.setFwdKey("new");
+    TransformRequest request = new TransformRequest();
+    request.setInputType(TransformRequest.InputTypeEnum.MEDIA_SOURCE);
+    request.setMediaTarget(mediaTargetConnectionInstance);
+    request.setMediaSource(mediaConnectorInstance);
+    request.setResourceType(TransformRequest.ResourceTypeEnum.IMAGE);
+    request.setTransformationDescriptor(transformationDescriptor);
+    try {
+        TransformResult response = new TransformAndStoreApi().transformAndStore(request);
+        System.out.println(response);
+    } catch (ApiException e) {
+        System.out.println(e.getMessage());
+    }
+```
+
+### Cache warmup
+Example of how perform cache warmup:
+```java
+    CacheWarmupRequestPayload cacheWarmupRequestPayload = new CacheWarmupRequestPayload();
+    cacheWarmupRequestPayload.setUrl("<your url>");
+    //cacheWarmupRequestPayload.setUrl("https://<cloud_name>.cloudinary.net/image/upload/c_scale,w_500/sample");
+      // try {
+          CacheWarmupSuccessResponse response = new CacheApi().warmup(cacheWarmupRequestPayload);
+          System.out.println(response);
+      } catch (ApiException e) {
+          System.out.println(e.getMessage());
+      }
+```
+
 
 ## Contributions
 - Ensure tests run locally
