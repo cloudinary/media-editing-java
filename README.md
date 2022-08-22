@@ -111,7 +111,7 @@ Example of how perform cache warmup:
     CacheWarmupRequestPayload cacheWarmupRequestPayload = new CacheWarmupRequestPayload();
     cacheWarmupRequestPayload.setUrl("<your url>");
     //cacheWarmupRequestPayload.setUrl("https://<cloud_name>.cloudinary.net/image/upload/c_scale,w_500/sample");
-      // try {
+      try {
           CacheWarmupSuccessResponse response = new CacheApi().warmup(cacheWarmupRequestPayload);
           System.out.println(response);
       } catch (ApiException e) {
