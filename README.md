@@ -20,11 +20,11 @@ For the complete documentation, see the [Media Editing SDK Guide](https://cloudi
 
 # Key Features
 ### Media Delivery API
--[CacheApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/CacheApi.md)
--[DeliveryProfileApi](https://github.com/cloudinary/media-delivery-api-java/blob/docs/DeliveryProfileApi.md)
--[MappingFunctionApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MappingFunctionApi.md)
--[MediaSourceApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MediaSourceApi.md)
--[MediaTargetApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MediaTargetApi.md)
+- [CacheApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/CacheApi.md)
+- [DeliveryProfileApi](https://github.com/cloudinary/media-delivery-api-java/blob/docs/DeliveryProfileApi.md)
+- [MappingFunctionApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MappingFunctionApi.md)
+- [MediaSourceApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MediaSourceApi.md)
+- [MediaTargetApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MediaTargetApi.md)
 
 ### Media Editing API
 -[TransformApi](https://github.com/cloudinary/media-editing-api-java/blob/main/docs/TransformApi.md)
