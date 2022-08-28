@@ -7,7 +7,7 @@ Effortlessly edit and deliver your cloud's assets.
 
 ### Additional documentation
 This Readme provides basic installation and usage information.
-For the complete documentation, see the [Media Editing SDK Guide](https://cloudinary.com/documentation/media_editing_api).
+For the complete documentation, see the [Media Editing SDK Guide](https://cloudinary.com/documentation/media_editing_api_sdks).
 
 
 ## Table of Contents
@@ -17,17 +17,19 @@ For the complete documentation, see the [Media Editing SDK Guide](https://cloudi
 - [Usage](#usage)
     - [Setup](#Setup)
     - [Create Media Source](#Create Media Source)
+    - [Transform and Store](#Transform and Store)
+    - [Cache warmup](#Cache warmup)
 
 # Key Features
 ### Media Delivery API
-- [CacheApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/CacheApi.md)
-- [DeliveryProfileApi](https://github.com/cloudinary/media-delivery-api-java/blob/docs/DeliveryProfileApi.md)
-- [MappingFunctionApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MappingFunctionApi.md)
-- [MediaSourceApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MediaSourceApi.md)
-- [MediaTargetApi](https://github.com/cloudinary/media-delivery-api-java/blob/main/docs/MediaTargetApi.md)
+- [CacheApi](https://cloudinary.com/documentation/media_editing_api_reference#/Cache)
+- [DeliveryProfileApi](https://cloudinary.com/documentation/media_editing_api_reference#/Delivery%20Profile)
+- [MappingFunctionApi](https://cloudinary.com/documentation/media_editing_api_reference#/Mapping%20Function)
+- [MediaSourceApi](https://cloudinary.com/documentation/media_editing_api_reference#/Media%20Source)
+- [MediaTargetApi](https://cloudinary.com/documentation/media_editing_api_reference#/Media%20Target)
 
 ### Media Editing API
--[TransformApi](https://github.com/cloudinary/media-editing-api-java/blob/main/docs/TransformApi.md)
+- [TransformApi](https://cloudinary.com/documentation/media_editing_api_reference#transform_api)
 
 ## Version Support
 | SDK Version | Java 6+ |
@@ -119,10 +121,6 @@ Example of how to perform a cache warmup:
       }
 ```
 
-
-## Contributions
-- Ensure tests run locally
-- Open a PR and ensure Travis tests pass
 
 ## Get Help
 - [Open a Github issue](https://github.com/CloudinaryLtd/media-editing-java/issues) (for issues related to the SDK)
