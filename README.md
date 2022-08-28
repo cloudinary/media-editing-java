@@ -58,7 +58,7 @@ class SampleApp {
 }
 ```
 ### Create Media Source
-The following example shows how to add a new media source:
+Example of how to add Media Storage, in this case a new media source:
 ```java
     MediaSourceCreatePayload mediaSourceCreatePayload = new MediaSourceCreatePayload();
     mediaSourceCreatePayload.setDisplayName("my_media_source");
@@ -81,7 +81,7 @@ The following example shows how to add a new media source:
 ```
 
 ### Transform and Store
-Example of how to perform transform and store:
+Example of how to transform and store an asset:
 ```java
     TransformationDescriptor transformationDescriptor = new TransformationDescriptor();
     transformationDescriptor.setCanonicalTransformation("w_500,c_scale");
@@ -106,7 +106,7 @@ Example of how to perform transform and store:
 ```
 
 ### Cache warmup
-Example of how perform cache warmup:
+Example of how to perform a cache warmup:
 ```java
     CacheWarmupRequestPayload cacheWarmupRequestPayload = new CacheWarmupRequestPayload();
     cacheWarmupRequestPayload.setUrl("<your url>");
