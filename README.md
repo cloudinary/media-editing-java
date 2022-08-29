@@ -16,9 +16,9 @@ For the complete documentation, see the [Media Editing SDK Guide](https://cloudi
 - [Installation](#installation)
 - [Usage](#usage)
     - [Setup](#Setup)
-    - [Create Media Source](#Create Media Source)
-    - [Transform and Store](#Transform and Store)
-    - [Cache warmup](#Cache warmup)
+    - [Create Media Source](#Create-Media-Source)
+    - [Transform and Store](#Transform-and-Store)
+    - [Cache warmup](#Cache-warmup)
 
 # Key Features
 ### Media Delivery API
